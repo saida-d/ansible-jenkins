@@ -1,11 +1,11 @@
 
 ---
-hosts: webserver
-become: True
-tasks: 
+ hosts: webserver
+ become: True
+ tasks: 
   - name: Creating docker image
     docker_container:
-      name: myredis
+      name: myapp
       image: php:8.0.9-apache
       state: started
       recreate: yes
