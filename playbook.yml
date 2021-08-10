@@ -4,15 +4,15 @@ hosts: webserver
 become: True
 tasks: 
   - name: Creating docker image
-  docker_container:
-    name: myredis
-    image: php:8.0.9-apache
-    state: started
-    recreate: yes
-    exposed_ports:
-      - 80
-    volumes_from:
-      - . /var/www/html
+    docker_container:
+      name: myredis
+      image: php:8.0.9-apache
+      state: started
+      recreate: yes
+      exposed_ports:
+        - 80
+      volumes_from:
+        - . /var/www/html
       
 
 
