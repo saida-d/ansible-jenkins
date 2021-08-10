@@ -16,6 +16,7 @@ Agenda: Create your pipeline with Jenkins &amp; Ansible Config tool.
  
  > Ansible can install in other OS like Centos/Ubuntu/Amazon Linux easily. Also make sure you have installed JAVA-JDK before jenkins
 - Once installation done - start jenkins server on your port 8080 (default)
+- Once account setup done, install jenkins plugin here and configure it accordingly - i.e you can point jenkins path e.g. /usr/bin, INV file name e.g. hosts.inv, playbook file name
 - Then create a new job by choosing pipeline option
 - Point this repository under source control 
 - Build with shell - commands 
