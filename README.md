@@ -25,3 +25,12 @@ Agenda: Create your pipeline with Jenkins &amp; Ansible Config tool.
 - Build now 
 - You can see the pipeline actions now
 - If stages are success then check the web URL (your target VM box IP/domain) e.g. 10.1.1.1 or domain.com
+
+
+#### Additional 
+- When you executing ansible playbook in pipeline it will ask you to connect target machine/groups SSH connection. So create SSH (jenkins credentials) 
+> Goto jenkins credentials => Choose SSH username with private option then fill the options accordingly
+
+> Here you may need to execute from target machine "ssh-keygen"  for public/private key. Once generate the key copy and paste to jenkins (at credentials part)
+
+> Disable HOST  SSH key checkin (if you are using spinnet generator area/for ansible)
