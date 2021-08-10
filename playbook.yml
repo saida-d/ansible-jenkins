@@ -1,18 +1,18 @@
 
 ---
- hosts: webserver
- become: True
- tasks: 
-  - name: Creating docker image
-    docker_container:
-      name: myapp
-      image: php:8.0.9-apache
-      state: started
-      recreate: yes
-      exposed_ports:
-        - 80
-      volumes_from:
-        - . /var/www/html
+- hosts: webserver
+  become: True
+  tasks: 
+   - name: Creating docker image
+     docker_container:
+       name: myapp
+       image: php:8.0.9-apache
+       state: started
+       recreate: yes
+       exposed_ports:
+         - 80
+       volumes_from:
+         - . /var/www/html
       
 
 
