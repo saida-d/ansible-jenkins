@@ -3,11 +3,6 @@
 - hosts: webserver
   become: True
   tasks: 
-   - name: Docker Starting
-     docker_container:
-       name: docker
-       command: systemctl restart docker
-       
    - name: Creating docker image
      docker_container:
        name: myapp
