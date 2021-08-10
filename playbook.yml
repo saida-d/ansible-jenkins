@@ -10,7 +10,7 @@
        state: started
        recreate: yes
        exposed_ports:
-         - 80
+         - "80:80"
        volumes_from:
          - . /var/www/html
       
