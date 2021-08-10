@@ -11,7 +11,7 @@ Agenda: Create your pipeline with Jenkins &amp; Ansible Config tool.
 
 
 ### Steps
-- Install Java-JDK, Jenkins, Ansible, Docker - in ONE VM (lets name it as Jenkins-Ansible-VM)
+- Install Java-JDK, Jenkins, Ansible, Docker, Git - in ONE VM (lets name it as Jenkins-Ansible-VM)
  > Sometimes you may be face troubleshooting in Jenkins/Ansible specially if you are using RedHat ansible should be registered from subscription-manager 
  
  > Ansible can install in other OS like Centos/Ubuntu/Amazon Linux easily. Also make sure you have installed JAVA-JDK before jenkins
