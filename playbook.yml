@@ -9,7 +9,7 @@
        image: php:8.0.9-apache
        state: started
        recreate: yes
-       exposed_ports:
+       ports:
          - "80:80"
        volumes_from:
          - . /var/www/html
